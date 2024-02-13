@@ -6,24 +6,21 @@
 // hint.
 
 struct ColorClassicStruct {
-    // TODO: Something goes here
-    red: u16,
-    green: u16,
-    blue: u16,
+    red: u8,
+    green: u8,
+    blue: u8,
 }
 
 struct ColorTupleStruct(u16, u16, u16);
 
 #[derive(Debug)]
 struct UnitLikeStruct;
-
 #[cfg(test)]
 mod tests {
     use super::*;
 
     #[test]
     fn classic_c_structs() {
-        // TODO: Instantiate a classic c struct!
         let green = ColorClassicStruct {
             red: 0,
             green: 255,
@@ -37,7 +34,6 @@ mod tests {
 
     #[test]
     fn tuple_structs() {
-        // TODO: Instantiate a tuple struct!
         let green = ColorTupleStruct(0, 255, 0);
 
         assert_eq!(green.0, 0);
