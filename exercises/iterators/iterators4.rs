@@ -4,7 +4,7 @@
 // hint.
 
 pub fn factorial(num: u64) -> u64 {
-    (1..num+1).product()
+    (1..=num).product()
 }
 
 #[cfg(test)]
