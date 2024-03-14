@@ -55,7 +55,7 @@ impl From<&str> for Person {
 
         match (&name, age) {
             (_, Ok(age)) if !name.is_empty() => Person { name, age },
-            _ => Person::default()
+            _ => Person::default(),
         }
     }
 }

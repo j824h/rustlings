@@ -50,7 +50,7 @@ impl TryFrom<(i16, i16, i16)> for Color {
         let red = red.unwrap();
         let green = green.unwrap();
         let blue = blue.unwrap();
-        
+
         Ok(Color { red, green, blue })
     }
 }
